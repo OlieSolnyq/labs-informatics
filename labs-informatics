@@ -1,0 +1,13 @@
+#!/bin/bash
+cd ~
+cd Desktop
+cd Olga
+echo "Please insert the number of files ^.^"
+read n
+for i in $(seq 1 $n)
+do touch file$i.txt
+	a=$RANDOM
+	b=$RANDOM
+	echo $a + $b = $(( $a + $b )) > file$i.txt
+done
+
